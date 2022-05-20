@@ -1,6 +1,7 @@
 <template>
 
-  <v-container class="grey lighten-5"> Teste
+  <v-container class="grey lighten-5"> 
+    <v-text class=" pt-0">Teste</v-text>
     <v-row no-gutters>
       <v-col
         cols="12"
@@ -169,6 +170,8 @@
         name: 'Produtos',
         data: ()=>({
           show: false,
+          show1: false,
+          show2: false
         })
     }
 </script>

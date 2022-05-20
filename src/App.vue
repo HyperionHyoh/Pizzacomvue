@@ -3,13 +3,14 @@
   <v-app>
     
     <v-card
+    
     color="grey lighten-4"
     flat
     height="200px"
     tile
   >
-    <v-toolbar>
-      <v-icon>mdi-pizza</v-icon>
+    <v-toolbar class="indigo lighten-1 white--text text-center">
+      <v-icon >mdi-pizza</v-icon>
 
       <v-toolbar-title>Pizza</v-toolbar-title>
 
