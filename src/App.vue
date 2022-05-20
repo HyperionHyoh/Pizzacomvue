@@ -1,32 +1,48 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-card
+    color="grey lighten-4"
+    flat
+    height="200px"
+    tile
+  >
+    <v-toolbar>
+      <v-icon>mdi-pizza</v-icon>
+
+      <v-toolbar-title>Pizza</v-toolbar-title>
+
+      <v-spacer></v-spacer>
+ 
+      <v-btn icon>
+        <v-icon>mdi-cart</v-icon>
+        
+      </v-btn>
+
+      <v-btn icon>
+        <v-icon>mdi-login</v-icon>
+        
+      </v-btn>
+
+    </v-toolbar>
+    <Banner/>
+    <Produtos/>
+  </v-card>
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+<script>
+import Banner from '@/components/Banner.vue'
+import Produtos from '@/components/Produtos.vue'
+export default {
+  name: 'App',
+  components:{
+    Produtos,
+    Banner
+  },
+  data: () => ({
+    //
+    drawer: false,
+    group: null,
+  }),
+};
+</script>
