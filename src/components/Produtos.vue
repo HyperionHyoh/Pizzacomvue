@@ -1,10 +1,12 @@
 <template>
+
   <v-container class="grey lighten-5"> Teste
     <v-row no-gutters>
       <v-col
         cols="12"
         sm="4"
       >
+      
         <v-card
           class="mx-auto"
           max-width="300"
@@ -158,6 +160,7 @@
       </v-col>
     </v-row>
   </v-container>
+
 </template>
 
 <script>

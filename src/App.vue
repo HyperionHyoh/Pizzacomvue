@@ -1,5 +1,7 @@
 <template>
+
   <v-app>
+    
     <v-card
     color="grey lighten-4"
     flat
@@ -26,19 +28,23 @@
     </v-toolbar>
     <Banner/>
     <Produtos/>
+    <Rodape/>
   </v-card>
   </v-app>
 </template>
 
 <script>
+import Rodape from '@/components/Rodape.vue'
 import Banner from '@/components/Banner.vue'
 import Produtos from '@/components/Produtos.vue'
+
 export default {
   name: 'App',
   components:{
     Produtos,
-    Banner
-  },
+    Banner,
+    Rodape
+},
   data: () => ({
     //
     drawer: false,
