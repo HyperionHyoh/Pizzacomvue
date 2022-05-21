@@ -1,5 +1,5 @@
 <template>
-
+  
   <v-app>
     
     <v-card
@@ -14,15 +14,13 @@
 
       <v-toolbar-title>Pizza</v-toolbar-title>
 
+      <!--<router-link  to="/"><v-icon>mdi-cart</v-icon></router-link>
+      <router-link to="/about">Go to About</router-link>-->
+      
       <v-spacer></v-spacer>
- 
-      <v-btn icon>
-        <v-icon>mdi-cart</v-icon>
-        
-      </v-btn>
 
       <v-btn icon>
-        <v-icon>mdi-login</v-icon>
+        <Carrinho/>
         
       </v-btn>
 
@@ -31,6 +29,7 @@
     <Produtos/>
     <Rodape/>
   </v-card>
+  
   </v-app>
 </template>
 
@@ -38,13 +37,15 @@
 import Rodape from '@/components/Rodape.vue'
 import Banner from '@/components/Banner.vue'
 import Produtos from '@/components/Produtos.vue'
+import Carrinho from '@/components/Carrinho.vue'
 
 export default {
   name: 'App',
   components:{
     Produtos,
     Banner,
-    Rodape
+    Rodape,
+    Carrinho
 },
   data: () => ({
     //
