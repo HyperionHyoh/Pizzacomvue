@@ -40,7 +40,7 @@
           justify="center"
           
         >
-          <div class="text-h4" >
+          <div class="text-h4 white--text" >
             Segunda/Terça/Quarta - Mussarela R$15,00
           </div>
         </v-row>
@@ -60,7 +60,7 @@
           align="center"
           justify="center"
         >
-          <div class="text-h4" background>
+          <div class="text-h4 white--text" background>
             Quinta/Sexta - Calabresa R$20,00
           </div>
         </v-row>
@@ -80,7 +80,7 @@
           align="center"
           justify="center"
         >
-          <div class="text-h4">
+          <div class="text-h4 white--text">
             Sabado/Domingo - Marguerita R$15,00
           </div>
         </v-row>

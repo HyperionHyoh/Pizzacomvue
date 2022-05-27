@@ -28,7 +28,7 @@
           >
             <v-icon>mdi-close</v-icon>
           </v-btn>
-          <v-toolbar-title>Settings</v-toolbar-title>
+          <v-toolbar-title>Carrinho</v-toolbar-title>
           <v-spacer></v-spacer>
           <v-toolbar-items>
             <v-btn
@@ -44,53 +44,106 @@
           three-line
           subheader
         >
-          <v-subheader>User Controls</v-subheader>
+          <v-subheader>Informações financeiras</v-subheader>
           <v-list-item>
             <v-list-item-content>
-              <v-list-item-title>Content filtering</v-list-item-title>
-              <v-list-item-subtitle>Set the content filtering level to restrict apps that can be downloaded</v-list-item-subtitle>
+              <v-list-item-title>Forma de pagamento</v-list-item-title>
+              <v-list-item-subtitle>Selecione sua forma de pagamento</v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
-          <v-list-item>
-            <v-list-item-content>
-              <v-list-item-title>Password</v-list-item-title>
-              <v-list-item-subtitle>Require password for purchase or use password to restrict purchase</v-list-item-subtitle>
-            </v-list-item-content>
-          </v-list-item>
+          
         </v-list>
         <v-divider></v-divider>
         <v-list
           three-line
           subheader
         >
-          <v-subheader>General</v-subheader>
-          <v-list-item>
-            <v-list-item-action>
-              <v-checkbox v-model="notifications"></v-checkbox>
-            </v-list-item-action>
-            <v-list-item-content>
-              <v-list-item-title>Notifications</v-list-item-title>
-              <v-list-item-subtitle>Notify me about updates to apps or games that I downloaded</v-list-item-subtitle>
-            </v-list-item-content>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-action>
-              <v-checkbox v-model="sound"></v-checkbox>
-            </v-list-item-action>
-            <v-list-item-content>
-              <v-list-item-title>Sound</v-list-item-title>
-              <v-list-item-subtitle>Auto-update apps at any time. Data charges may apply</v-list-item-subtitle>
-            </v-list-item-content>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-action>
-              <v-checkbox v-model="widgets"></v-checkbox>
-            </v-list-item-action>
-            <v-list-item-content>
-              <v-list-item-title>Auto-add widgets</v-list-item-title>
-              <v-list-item-subtitle>Automatically add home screen widgets</v-list-item-subtitle>
-            </v-list-item-content>
-          </v-list-item>
+          <v-subheader>Não perca! 10% de desconto no PIX!</v-subheader>
+          
+          <v-row no-gutters>
+            <v-col
+              
+              cols="12"
+              sm="4"
+            >
+              <v-card
+                class="pa-2"
+                outlined
+                tile
+              >
+                <v-form
+                  ref="form"
+                  v-model="valid"
+                  lazy-validation
+                >
+                  <v-text-field
+                    
+                    label="Numero do Cartão"
+                    required
+                    outlined
+                  ></v-text-field>
+
+                  <v-text-field
+                    
+                    
+                    label="Nome"
+                    required
+                    outlined
+                  ></v-text-field>
+
+                  <v-text-field
+                   
+                    label="Validade"
+                    required
+                    outlined
+                  ></v-text-field>
+                  <v-text-field
+                    v-model="email"
+                    
+                    label="Código de segurança"
+                    required
+                    outlined
+                  ></v-text-field>
+
+                  
+                </v-form>
+              </v-card>
+            </v-col>
+
+            <v-col
+              
+              cols="12"
+              sm="8"
+            >
+              <v-card
+                class="pa-2"
+                outlined
+                tile
+              >
+
+                <v-list two-line> 
+                  <v-list-item>
+                    <v-list-item-icon>
+                      <v-icon color="indigo">
+                        mdi-phone
+                      </v-icon>
+                    </v-list-item-icon>
+                  </v-list-item>
+                </v-list>
+
+                <v-btn
+                    color="primary"
+                    class="mr-4"
+                    
+                >
+                    Confirmar
+                </v-btn>
+              </v-card>
+            </v-col>
+
+            
+          </v-row>
+          
         </v-list>
       </v-card>
     </v-dialog>
